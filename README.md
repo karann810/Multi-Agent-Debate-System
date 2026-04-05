@@ -159,11 +159,3 @@ llama-3.3-70b-versatile: Free on Groq's free plan.
 Each debate = ~13 LLM calls, typically completes in 30-60 seconds.
 
 ---
-
-## Extending This
-
-- **Add a web UI**: Wrap `graph.invoke()` in FastAPI + stream with WebSockets
-- **Add more agents**: Create new nodes in `agents.py`, add to graph in `graph.py`  
-- **Persist state**: Replace in-memory state with LangGraph's built-in checkpointing
-- **Add memory**: Use LangGraph's `MemorySaver` to reference past debates
-- **Visualize graph**: `graph.get_graph().draw_mermaid()` gives you a Mermaid diagram
